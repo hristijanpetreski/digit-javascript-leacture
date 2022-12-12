@@ -1,5 +1,5 @@
-const canvas = document.querySelector("canvas");
-var ctx = canvas.getContext("2d");
+const canvas = document.querySelector('canvas');
+var ctx = canvas.getContext('2d');
 
 function drawRectangle(color, x, y, w, h) {
   ctx.fillStyle = color;

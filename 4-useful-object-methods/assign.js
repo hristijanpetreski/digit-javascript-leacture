@@ -8,8 +8,18 @@ const items = [
 
 const heroes = ['Captain America', 'Iron Man', 'Thor', 'Black Panther', 'Hulk'];
 
-const emptyObj = {};
+const emptyObj = {
+  randomValue: 5,
+};
 
-Object.assign(emptyObj, { items }, { heroes });
+const resultObject = Object.assign(
+  emptyObj,
+  { items },
+  { heroes },
+  { name: 'GrabIT' }
+);
 
-console.log(emptyObj);
+resultObject.randomValue = 70;
+
+console.log(Object.values(emptyObj));
+// console.log(resultObj === emptyObj); -> prints true
